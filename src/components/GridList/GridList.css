@@ -1,0 +1,17 @@
+.generalGridListContainer{
+    margin: 40px 0;
+}
+
+.generalGridListContainer .h2{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    color: #E86060;
+    margin: 20px 0;
+}
+
+.gridListContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 30px;
+}

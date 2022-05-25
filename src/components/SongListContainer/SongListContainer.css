@@ -1,0 +1,13 @@
+.songListContainer{
+    width: 80%;
+    padding: 15px 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.songListContainer .upperNavBarContainer{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

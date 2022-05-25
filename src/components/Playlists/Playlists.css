@@ -1,0 +1,22 @@
+.playlistContainer{
+    color: white;
+    text-align: left;
+    margin: 50px 60px;
+}
+
+.playlistContainer .h2{
+    font-size: 22px;
+}
+
+.playlistContainer .linkContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.playlistContainer .link{
+    text-decoration: none;
+    color: white;
+    margin: 4px 0;
+    width: fit-content;
+}

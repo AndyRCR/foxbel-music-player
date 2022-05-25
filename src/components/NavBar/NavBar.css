@@ -1,0 +1,12 @@
+.navBarContainer{
+    width: 20%;
+    background-color: #662323;
+}
+
+.navBarContainer .imgContainer{
+    margin: 50px 60px;
+}
+
+.navBarContainer img{
+    width: 100%;
+}

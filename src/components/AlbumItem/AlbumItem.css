@@ -1,0 +1,32 @@
+.albumItemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 160px;
+}
+
+.albumItemContainer .playIconContainer{
+    min-width: 160px;
+    min-height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.albumItemContainer .songName{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+}
+
+.albumItemContainer .artistName{
+    color: #828282;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+}

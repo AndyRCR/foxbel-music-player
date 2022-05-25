@@ -1,0 +1,10 @@
+.generalContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navOutletContainer{
+    display: flex;
+    height: 90%;
+}

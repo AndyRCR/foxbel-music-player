@@ -1,0 +1,21 @@
+.listContainer{
+    height: 90%;
+    margin-top: 50px;
+    overflow: overlay;
+}
+
+.listContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.listContainer::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.listContainer::-webkit-scrollbar-thumb {
+    background-color: #EB5757;
+}
+
+.listContainer::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}

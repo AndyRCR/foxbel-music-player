@@ -1,0 +1,35 @@
+.songBarContainer{
+    height: 10%;
+    background-color: #EB5757;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.songBarContainer .actualSong{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.songBarContainer .actualSong img{
+    height: 100%;
+}
+
+.songBarContainer .actualSongInfo{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.songBarContainer .songName{
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+.songBarContainer .artistName{
+    text-align: left;
+    font-size: 12px;
+}

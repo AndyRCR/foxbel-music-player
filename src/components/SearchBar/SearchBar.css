@@ -1,0 +1,25 @@
+.searchBarContainer{
+    font-size: 20px;
+}
+
+.searchBarContainer .searchBar{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBarContainer .textArea{
+    border: none;
+    flex: 1;
+}
+
+.searchBarContainer .textArea:focus{
+    outline: none;
+}
+
+.searchBarContainer .textArea::placeholder{
+    color: #BDBDBD;
+}
