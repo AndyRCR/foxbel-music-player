@@ -15,13 +15,13 @@ const Volume = () => {
 
   return (
     <div className='volumeContainer'>
-      <input onChange={handleVolume} value={volumeLevel*100} type="range" className="range-style"></input>
+      <input style={{cursor: 'pointer'}} onChange={handleVolume} value={volumeLevel*100} type="range" className="range-style"></input>
       <div className='volumeIcon'>
-        { isMuted ? <FontAwesomeIcon onClick={() => {
+        { isMuted ? <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={() => {
           setIsMuted(false)
           setVolumeLevel(1)
           }} icon={faVolumeXmark}/> :
-        <FontAwesomeIcon onClick={() => {
+        <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={() => {
           setIsMuted(true)
           setVolumeLevel(0)
           }} icon={faVolumeHigh}/>}

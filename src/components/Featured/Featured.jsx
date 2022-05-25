@@ -17,7 +17,7 @@ const Featured = () => {
     
   return (
     <>
-        { songList != null ? (<div className='featuredContainer' style={{backgroundImage: `url(${songList.data[0].artist.picture_xl})`}}>
+        <div className='featuredContainer' style={{backgroundImage: `url(${songList.data[0].artist.picture_xl})`}}>
             <div className='featuredImgContainer' style={{backgroundImage: `url(${songList.data[0].album.cover_medium})`}}>
                 <div className='playIconContainer'>
                     <FontAwesomeIcon onClick={playFeatured} style={{cursor: 'pointer'}} icon={faPlay} ></FontAwesomeIcon>
@@ -40,9 +40,7 @@ const Featured = () => {
                     
                 </div>
             </div>
-        </div>) : (
-            <h1>Cargando...</h1>
-        )}
+        </div>
     </>
     
   )

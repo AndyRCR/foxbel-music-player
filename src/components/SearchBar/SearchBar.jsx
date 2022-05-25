@@ -19,6 +19,7 @@ const SearchBar = () => {
   }
 
   const search = () =>{
+    setSongList(null)
     setIsPlaying(false)
     fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=album:"${wordToSearch}"`, options)
 	  .then(response => response.json())

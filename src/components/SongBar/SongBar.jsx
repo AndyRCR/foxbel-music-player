@@ -13,6 +13,7 @@ const SongBar = () => {
     <div className='songBarContainer'>
         <div className='actualSong'>
           {songList != null && (
+            songList.data.length>0 &&
             <>
               <img alt='' src={songList.data[songIndex].album.cover_small}/>
               <div className='actualSongInfo'>

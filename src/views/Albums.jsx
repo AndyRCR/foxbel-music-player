@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import SongListContainer from '../components/SongListContainer/SongListContainer'
+import { GlobalContext } from '../context/GlobalStateContext'
 
 const Albums = () => {
+
+    const {setSongList} = useContext(GlobalContext)
+
+    useEffect(() => {
+        setSongList(null)
+    })
+
   return (
-    <h1>In development</h1>
+    <>
+        <SongListContainer/>
+    </>
   )
 }
 

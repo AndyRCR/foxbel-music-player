@@ -28,15 +28,17 @@ const Controls = () => {
   return (
     <div className='controlsContainer'>
         <div className='back'>
-            <FontAwesomeIcon onClick={() => previousSong()} icon={faBackward}/>
+            <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={() => previousSong()} icon={faBackward}/>
         </div>
         <div style={{height: '100%', display: 'flex', alignItems: 'center'}}>
             <div className='play'>
-                { isPlaying ? <FontAwesomeIcon onClick={pauseSong} icon={faPause}/> : <FontAwesomeIcon onClick={playSong} icon={faPlay}/>}
+                { isPlaying ?
+                <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={pauseSong} icon={faPause}/> :
+                <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={playSong} icon={faPlay}/>}
             </div>
         </div>
         <div className='next'>
-            <FontAwesomeIcon onClick={() => nextSong()} icon={faForward}/>
+            <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={() => nextSong()} icon={faForward}/>
         </div>
     </div>
   )
