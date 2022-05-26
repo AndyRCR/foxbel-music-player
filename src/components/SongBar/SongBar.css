@@ -49,5 +49,14 @@
     .songBarContainer .songName,
     .songBarContainer .artistName{
         font-size: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 820px){
+    .songBarContainer .songName,
+    .songBarContainer .artistName{
+        display: none;
     }
 }

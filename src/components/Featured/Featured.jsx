@@ -33,11 +33,10 @@ const Featured = () => {
                 </p>
                 <div className='buttonContainer'>
                     <button onClick={playFeatured} className='btnReproducir'>Reproducir</button>
-                    <button onClick={() => alert('Chupame el pene micky :3')} className='btnSeguir'>Seguir</button>
+                    <button className='btnSeguir'>Seguir</button>
                     <div className='iconContainer'>
                         <FontAwesomeIcon icon={faEllipsis}></FontAwesomeIcon>
                     </div>
-                    
                 </div>
             </div>
         </div>

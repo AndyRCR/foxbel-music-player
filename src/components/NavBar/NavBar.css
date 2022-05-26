@@ -12,10 +12,15 @@
 
 .navBarContainer .logoSm{
     display: none;
+    cursor: pointer;
 }
 
 .navBarContainer img{
     width: 100%;
+}
+
+.navBarContainer .logo{
+    cursor: pointer;
 }
 
 .closeIconContainer{

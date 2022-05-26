@@ -10,6 +10,7 @@
   color: white;
   background-color: #eb5757;
   transition: 0.3s;
+  margin-right: 20px;
 }
 
  .menuIconContainer:hover {
