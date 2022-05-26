@@ -30,11 +30,11 @@ const Controls = () => {
         <div className='back'>
             <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={() => previousSong()} icon={faBackward}/>
         </div>
-        <div style={{height: '100%', display: 'flex', alignItems: 'center'}}>
+        <div onClick={ isPlaying ? pauseSong : playSong} style={{cursor: 'pointer', height: '100%', display: 'flex', alignItems: 'center'}}>
             <div className='play'>
                 { isPlaying ?
-                <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={pauseSong} icon={faPause}/> :
-                <FontAwesomeIcon style={{cursor: 'pointer'}} onClick={playSong} icon={faPlay}/>}
+                <FontAwesomeIcon icon={faPause}/> :
+                <FontAwesomeIcon icon={faPlay}/>}
             </div>
         </div>
         <div className='next'>

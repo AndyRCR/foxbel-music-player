@@ -29,3 +29,35 @@
     padding: 0 54px;
     border-left: 6px solid #E86060;
 }
+
+@media (max-width: 1200px) {
+    .menuContainer .h2{
+        padding: 0 25px;
+        font-size: 20px;
+    }
+
+    .menuContainer .navLink{
+        padding: 0 25px;
+    }
+
+    .menuContainer .activeNavLink{
+        padding: 0 19px;
+    }
+}
+
+@media (max-width: 1000px){
+    .menuContainer{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menuContainer .h2{
+        font-size: 15px;
+    }
+
+    .menuContainer .navLink,
+    .menuContainer .activeNavLink{
+        font-size: 12px;
+    }
+}

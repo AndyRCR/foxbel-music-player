@@ -1,8 +1,12 @@
 import React from 'react'
+import CloseButton from '../components/CloseButton/CloseButton'
 
 const Podcasts = () => {
   return (
-    <h1>In development</h1>
+    <>
+      <CloseButton/>
+      <h1>In development</h1>
+    </>
   )
 }
 

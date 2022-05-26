@@ -8,18 +8,11 @@ import HowlerRep from '../HowlerRep/HowlerRep'
 const SearchBar = () => {
 
   const [wordToSearch, setWordToSearch] = useState('')
-  const {setSongList, setIsPlaying} = useContext(GlobalContext)
-
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com',
-      'X-RapidAPI-Key': 'a65d0e0058mshcc16fa0e8d384d6p15d152jsnd19bb60dd9b5'
-    }
-  }
+  const {setSongList, setIsPlaying, options, setSongIndex} = useContext(GlobalContext)
 
   const search = () =>{
     setSongList(null)
+    setSongIndex(0)
     setIsPlaying(false)
     fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=album:"${wordToSearch}"`, options)
 	  .then(response => response.json())
@@ -35,7 +28,7 @@ const SearchBar = () => {
     <div className='searchBarContainer'>
         <div className='searchBar'>
             <input onKeyDown={searchEnter} onChange={(evt) => setWordToSearch(evt.target.value)} className='textArea' type="text" placeholder='Buscar'/>
-            <FontAwesomeIcon onClick={search} style={{cursor: 'pointer'}} color='#BDBDBD' icon={faMagnifyingGlass} />
+            <FontAwesomeIcon className='searchIcon' onClick={search} style={{cursor: 'pointer'}} color='#BDBDBD' icon={faMagnifyingGlass} />
         </div>
         <HowlerRep/>
     </div>

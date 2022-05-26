@@ -1,13 +1,54 @@
-.songListContainer{
-    width: 80%;
-    padding: 15px 50px 0;
-    display: flex;
-    flex-direction: column;
+.songListContainer {
+  width: 80%;
+  padding: 15px 50px 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
 }
 
-.songListContainer .upperNavBarContainer{
-    height: 10%;
+.songListContainer .upperNavBarContainer {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songListContainer .menuIconContainer {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: #eb5757;
+  transition: 0.3s;
+}
+
+.songListContainer .menuIconContainer:hover {
+  background-color: #e63737;
+}
+
+.songListContainer .menuIcon {
+  font-size: 25px;
+}
+
+@media (max-width: 650px) {
+  .songListContainer .menuIconContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
+
+  .songListContainer {
+    width: 100%;
+    padding: 15px 0 0;
+    align-items: center;
+  }
+
+  .songListContainer .upperNavBarContainer {
+    width: 90%;
+  }
 }

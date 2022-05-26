@@ -1,0 +1,29 @@
+ .menuIconContainer {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: #eb5757;
+  transition: 0.3s;
+}
+
+ .menuIconContainer:hover {
+  background-color: #e63737;
+}
+
+ .menuIcon {
+  font-size: 25px;
+}
+
+@media (max-width: 650px) {
+   .menuIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

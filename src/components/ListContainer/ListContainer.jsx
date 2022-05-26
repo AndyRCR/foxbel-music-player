@@ -7,14 +7,22 @@ import './ListContainer.css'
 
 const ListContainer = () => {
 
-  const {songList} = useContext(GlobalContext)
+  const {songList, setSongList, setIsPlaying, options, setFirstLoad} = useContext(GlobalContext)
 
-  useEffect(() => {}, [songList])
+  useEffect(() => {
+    setSongList(null)
+    setIsPlaying(false)
+    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=album:"balas perdidas"`, options)
+    .then(response => response.json())
+    .then(response => {setSongList(response)})
+    .catch(err => console.error(err))
+    setFirstLoad(true)
+  }, [])
 
   return (
     <div className='listContainer'>
       {songList != null ? (
-        songList.data.length > 0 ? (
+        songList.data?.length > 0 ? (
           <>
             <Featured/>
             <GridList/>

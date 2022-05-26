@@ -20,3 +20,19 @@
     margin: 4px 0;
     width: fit-content;
 }
+
+@media (max-width: 1200px) {
+    .playlistContainer{
+        margin: 50px 25px;
+    }
+}
+
+@media (max-width: 800px) {
+    .playlistContainer .h2{
+        font-size: 15px;
+    }
+
+    .playlistContainer .linkContainer{
+        font-size: 12px;
+    }
+}

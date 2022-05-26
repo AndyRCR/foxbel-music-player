@@ -1,8 +1,25 @@
 .userContainer{
     display: flex;
+    align-items: center;
 }
 
 .userContainer .username{
     color: #4F4F4F;
     font-size: 16px;
+}
+
+@media (max-width: 1400px){
+    .userContainer{
+        font-size: 30px;
+    }
+
+  .userContainer .username{
+      display: none;
+  }
+}
+
+@media (max-width: 650px){
+ .userContainer{
+     display: none;
+ } 
 }

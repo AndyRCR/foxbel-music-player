@@ -60,9 +60,8 @@
 }
 
 .featuredContainer .btnSeguir{
-    background-color: transparent;
-    border: 2px solid #E86060;
-    color: #E86060;
+    background-color: rgba(255, 157, 157, 0.7);;
+    color: #fff;
 }
 
 .featuredContainer .btnSeguir:hover{
@@ -75,4 +74,32 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .featuredContainer{
+        width: 100%;
+        background-position: center;
+    }
+
+    .featuredContainer .p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 950px){
+    .featuredContainer .featuredImgContainer{
+        display: none;
+    }
+
+    .featuredContainer .buttonContainer{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px){
+    .featuredContainer .featuredInfoContainer{
+      width: 100%;
+      padding: 20px;
+    }
 }

@@ -8,3 +8,9 @@
     display: flex;
     height: 90%;
 }
+
+@media (max-width: 820px){
+    .navOutletContainer{
+        height: 92%;
+    }
+}

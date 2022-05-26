@@ -1,18 +1,11 @@
-import React, { useContext, useEffect } from 'react'
-import SongListContainer from '../components/SongListContainer/SongListContainer'
-import { GlobalContext } from '../context/GlobalStateContext'
+import React from 'react'
+import CloseButton from '../components/CloseButton/CloseButton'
 
 const Albums = () => {
-
-    const {setSongList} = useContext(GlobalContext)
-
-    useEffect(() => {
-        setSongList(null)
-    })
-
   return (
     <>
-        <SongListContainer/>
+        <CloseButton/>
+        <h1>In development</h1>
     </>
   )
 }

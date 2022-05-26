@@ -4,6 +4,7 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .songBarContainer .actualSong{
@@ -17,7 +18,7 @@
 }
 
 .songBarContainer .actualSongInfo{
-    padding: 0 15px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,4 +33,21 @@
 .songBarContainer .artistName{
     text-align: left;
     font-size: 12px;
+}
+
+@media (max-width: 1250px){
+    .songBarContainer .actualSong{
+        width: 30%;
+    }
+}
+
+@media (max-width: 820px){
+    .songBarContainer{
+        height: 8%;
+    }
+
+    .songBarContainer .songName,
+    .songBarContainer .artistName{
+        font-size: 10px;
+    }
 }

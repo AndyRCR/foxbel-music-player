@@ -30,3 +30,40 @@
     text-align: left;
     width: 100%;
 }
+
+@media (max-width: 1200px){
+    .albumItemContainer .songName,
+    .albumItemContainer .artistName{
+        padding: 0 5px 0;
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 1000px){
+    .albumItemContainer{
+        max-width: initial;
+    }
+
+    .gridListContainer .albumItemContainer .songName,
+    .gridListContainer .albumItemContainer .artistName{
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px){
+    .albumItemContainer .playIconContainer{
+        min-width: 130px;
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 650px) {
+    .albumItemContainer{
+        padding-bottom: 0;
+    }
+
+    .albumItemContainer .playIconContainer{
+        min-width: 150px;
+        min-height: 150px;
+    }
+}
